@@ -18,9 +18,13 @@
 
 The included LCD has the part number: LH096NT-IF09 made by [ShineWorld Innovations](https://www.swicn.com/product-by-category/6).
 
+It is supposed to be compatible to ST7735 LCDs. For which a [Micropython library](https://github.com/boochow/MicroPython-ST7735) exists.
+
 ### Camera
 
 Either OV2640 or OV7725.
+
+[OV2640 Micropython library for the ESP8266](https://github.com/namato/micropython-ov2640)
 
 ## Supported Features
 
