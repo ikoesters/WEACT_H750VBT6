@@ -1,6 +1,26 @@
-# WeAct STM32H750VBT6
+# Micropython Board Definitions for WeAct STM32H750VBT6
 
 ![board](docs/board.jpg)
+
+## Board Specifications
+
+- STM32H750VBT6 480Mhz, 128KB ROM, 1MB RAM
+- ARM Cortex M7 Architecture with FPU floating point unit, - complete DSP instruction and memory protection unit MPU
+- 8 MB SPI chip (for storage)
+- 8 MB QSPI memory (for program/flash)
+- Gold-plated, 4 layer PCB, RoHS process
+- User, BOOT0/DFU & reset buttons
+- USB C interface, Micro SD card,  3 buttons, DCMI camera - interface, with 1.5V and 2.8V power supply
+- Unofficial Support for OpenMV4 development
+- [GitHub Repository](https://github.com/WeActTC/MiniSTM32H7xx)
+
+### LCD
+
+The included LCD has the part number: LH096NT-IF09 made by [ShineWorld Innovations](https://www.swicn.com/product-by-category/6).
+
+### Camera
+
+Either OV2640 or OV7725.
 
 ## Supported Features
 
@@ -8,8 +28,8 @@ Features and correct Pin assignments are WIP - I combined them from [mcauser](ht
 
 So far these things are verified to work:
 
-+ [x] SD Card
-+ [x] User LED (LED1, Blue, Pin E3)
+- [x] SD Card
+- [x] User LED (LED1, Blue, Pin E3)
 
 ## Build the firmware
 
@@ -37,8 +57,8 @@ Once the upload is complete, disconnect and reconnect USB.
 
 ## Reference
 
-+ [mcauser/MCUDEV_DEVEBOX_H7XX_M](https://github.com/mcauser/MCUDEV_DEVEBOX_H7XX_M)
-+ [Mythologyli/MicroPython-MCUDev-DevEBox-STM32H743](https://github.com/Mythologyli/MicroPython-MCUDev-DevEBox-STM32H743)
+- [mcauser/MCUDEV_DEVEBOX_H7XX_M](https://github.com/mcauser/MCUDEV_DEVEBOX_H7XX_M)
+- [Mythologyli/MicroPython-MCUDev-DevEBox-STM32H743](https://github.com/Mythologyli/MicroPython-MCUDev-DevEBox-STM32H743)
 
 ## License
 
