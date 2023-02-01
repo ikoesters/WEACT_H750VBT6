@@ -9,6 +9,7 @@
 
 #define MICROPY_FATFS_EXFAT (1)
 #define MICROPY_HW_ENABLE_RTC (1)
+#define MICROPY_HW_HAS_LCD (1)
 #define MICROPY_HW_ENABLE_RNG (1)
 #define MICROPY_HW_ENABLE_ADC (1)
 #define MICROPY_HW_ENABLE_DAC (1)
@@ -86,6 +87,9 @@ extern struct _spi_bdev_t spi_bdev;
 
 // I2C busses
 // NOTE: You can enable more I2C busses here.
+#define MICROPY_HW_I2C1_SCL (pin_B8)
+#define MICROPY_HW_I2C1_SDA (pin_B9)
+
 #define MICROPY_HW_I2C2_SCL (pin_B10)
 #define MICROPY_HW_I2C2_SDA (pin_B11)
 
@@ -113,7 +117,7 @@ extern struct _spi_bdev_t spi_bdev;
 #define MICROPY_HW_USRSW_PRESSED (0)
 
 // LEDs
-#define MICROPY_HW_LED1 (pin_E3) // D2, the only controlable LED on the board.
+#define MICROPY_HW_LED1 (pin_E3) // BLUE_LED, the only controlable LED on the board.
 #define MICROPY_HW_LED_ON(pin) (mp_hal_pin_low(pin))
 #define MICROPY_HW_LED_OFF(pin) (mp_hal_pin_high(pin))
 
