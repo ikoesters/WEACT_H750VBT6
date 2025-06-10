@@ -1,5 +1,8 @@
 # Micropython Board Definitions for WeAct STM32H750VBT6
 
+## This repo is not actively maintained and breaks with current micropython versions. Please use [this fork](https://github.com/WWWWYYYYAAAA/WEACT_H750VBT6) by WWWWYYYYAAAA.  
+
+
 ![board](docs/board.jpg)
 
 ## Board Specifications
